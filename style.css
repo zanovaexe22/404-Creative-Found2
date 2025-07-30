@@ -1,0 +1,129 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+    color: #222;
+}
+
+header {
+    background: #262626;
+    color: #fff;
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+header nav a:hover {
+    color: #00c3ff;
+}
+
+main {
+    max-width: 900px;
+    margin: 35px auto 40px auto;
+    background: #fff;
+    padding: 40px 25px 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.2em;
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: #00c3ff;
+    margin-bottom: 30px;
+}
+
+.team-list {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-card {
+    background: #f7fbff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,195,255,0.04);
+    padding: 22px 18px 18px 18px;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.team-card img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00c3ff;
+    margin-bottom: 16px;
+    background: #fff;
+}
+
+.team-card h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #1d3557;
+}
+
+.team-card p {
+    margin: 0;
+    color: #555;
+    font-size: 0.98em;
+}
+
+.wa-link {
+    display: inline-block;
+    background: #25D366;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 18px;
+    transition: background 0.18s;
+}
+.wa-link:hover {
+    background: #128C7E;
+}
+
+footer {
+    background: #222;
+    color: #d6faff;
+    text-align: center;
+    padding: 10px 0 8px 0;
+    font-size: 1em;
+    letter-spacing: 1px;
+    margin-top: 0;
+    border-top: 2px solid #00c3ff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+@media (max-width: 800px) {
+    .team-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    main {
+        padding: 22px 5vw 35px 5vw;
+    }
+}
